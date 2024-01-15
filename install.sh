@@ -17,11 +17,3 @@ sudo -v
 ./iterm/install.sh
 ./mackup/install.sh
 ./python/install.sh
-
-
-
-
-
-
-# Symlink the Mackup config file to the home directory
-ln -s ./.mackup.cfg $HOME/.mackup.cfg
