@@ -127,4 +127,4 @@ export ARCHFLAGS="-arch ARM64"
 source $HOME/.dotfiles/zsh/aliases.sh
 source $HOME/.dotfiles/zsh/envs.sh
 
-#neofetch
+neofetch

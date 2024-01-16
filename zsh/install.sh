@@ -15,5 +15,9 @@ ln -is $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 rm -rf $HOME/.zprofile
 ln -is $HOME/.dotfiles/zsh/.zprofile $HOME/.zprofile
 
+# Removes neofetch config.conf and symlinks the neofetch config.conf file from the .dotfiles
+rm -rf $HOME/.config/neofetch/config.conf
+ln -is $HOME/.dotfiles/zsh/neofetch/config.conf $HOME/.config/neofetch/config.conf
+
 # remove info like "Last login: Sun Jan  7 19:53:12 on ttys001" in terminal
 touch ~/.hushlogin
