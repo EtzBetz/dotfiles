@@ -9,9 +9,9 @@
 #  88888888888  88      `888        `8'      `"YbbdP"'  
 #                                                       
 
-# set history size to infinite (anything non-numbers in infinite)
-export HISTSIZE='INFINITY'
-export HISTFILESIZE='ANDBEYOND'
+# set history size to infinite (anything non-numbers in infinite. THIS IS A LIE)
+export HISTSIZE=100000
+export HISTFILESIZE=100000
 
 # added by jetbrains toolbox
 export PATH="$PATH:/Users/raphael/Library/Application Support/JetBrains/Toolbox/scripts"

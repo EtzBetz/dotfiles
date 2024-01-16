@@ -9,11 +9,11 @@ fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
-ln -is .zshrc $HOME/.zshrc
+ln -is $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 
 # Removes .zprofile from $HOME (if it exists) and symlinks the .zprofile file from the .dotfiles
 rm -rf $HOME/.zprofile
-ln -is .zprofile $HOME/.zprofile
+ln -is $HOME/.dotfiles/zsh/.zprofile $HOME/.zprofile
 
 # remove info like "Last login: Sun Jan  7 19:53:12 on ttys001" in terminal
 touch ~/.hushlogin

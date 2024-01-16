@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# ASCII FONT: http://patorjk.com/software/taag/#p=display&h=1&v=1&c=bash&f=Univers&t=MISC
+
 # exit if any command fails
 set -e
 

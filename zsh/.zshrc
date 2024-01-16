@@ -1,4 +1,3 @@
-#ASCII FONT: http://patorjk.com/software/taag/#p=display&h=1&v=1&c=bash&f=Univers&t=MISC
 #                                                                                                                  
 #    ,ad8888ba,    88        88      88b           d88  8b        d8      888888888888   ad88888ba   88        88  
 #   d8"'    `"8b   88        88      888b         d888   Y8,    ,8P                ,88  d8"     "8b  88        88  
@@ -14,7 +13,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.dotfiles/oh-my-zsh"
+export ZSH="$HOME/.dotfiles/zsh/oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -114,15 +113,18 @@ export ARCHFLAGS="-arch ARM64"
 
 
 
-#                                                                                                              
-#  888b      88  88888888888  ,ad8888ba,    88888888888  88888888888  888888888888  ,ad8888ba,   88        88  
-#  8888b     88  88          d8"'    `"8b   88           88                88      d8"'    `"8b  88        88  
-#  88 `8b    88  88         d8'        `8b  88           88                88     d8'            88        88  
-#  88  `8b   88  88aaaaa    88          88  88aaaaa      88aaaaa           88     88             88aaaaaaaa88  
-#  88   `8b  88  88"""""    88          88  88"""""      88"""""           88     88             88""""""""88  
-#  88    `8b 88  88         Y8,        ,8P  88           88                88     Y8,            88        88  
-#  88     `8888  88          Y8a.    .a8P   88           88                88      Y8a.    .a8P  88        88  
-#  88      `888  88888888888  `"Y8888Y"'    88           88888888888       88       `"Y8888Y"'   88        88  
-#                                                                                                              
+#                                                                                          
+#    ,ad8888ba,   88        88   ad88888ba  888888888888  ,ad8888ba,    88b           d88  
+#   d8"'    `"8b  88        88  d8"     "8b      88      d8"'    `"8b   888b         d888  
+#  d8'            88        88  Y8,              88     d8'        `8b  88`8b       d8'88  
+#  88             88        88  `Y8aaaaa,        88     88          88  88 `8b     d8' 88  
+#  88             88        88    `"""""8b,      88     88          88  88  `8b   d8'  88  
+#  Y8,            88        88          `8b      88     Y8,        ,8P  88   `8b d8'   88  
+#   Y8a.    .a8P  Y8a.    .a8P  Y8a     a8P      88      Y8a.    .a8P   88    `888'    88  
+#    `"Y8888Y"'    `"Y8888Y"'    "Y88888P"       88       `"Y8888Y"'    88     `8'     88  
+#                                                                                          
 
-neofetch
+source $HOME/.dotfiles/zsh/aliases.sh
+source $HOME/.dotfiles/zsh/envs.sh
+
+#neofetch

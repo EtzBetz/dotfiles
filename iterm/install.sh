@@ -9,5 +9,6 @@
 #  88       88       88888888888  88      `8b  88     `8'     88  
 #                                                                 
 
-# set profile
-# move auto dark mode script to /Users/raphael/Library/Application\ Support/iTerm2/Scripts
+# ToDo: set profile/set profile read dir to .dotfiles
+
+cp ./Scripts $HOME/Library/Application Support/iTerm2/Scripts
