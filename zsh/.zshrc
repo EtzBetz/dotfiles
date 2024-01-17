@@ -1,3 +1,5 @@
+
+
 #                                                                                                                  
 #    ,ad8888ba,    88        88      88b           d88  8b        d8      888888888888   ad88888ba   88        88  
 #   d8"'    `"8b   88        88      888b         d888   Y8,    ,8P                ,88  d8"     "8b  88        88  
@@ -58,7 +60,7 @@ ENABLE_CORRECTION="true"
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -100,7 +102,7 @@ else
 fi
 
 # Compilation flags
-export ARCHFLAGS="-arch ARM64"
+export ARCHFLAGS="-arch arm64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -126,5 +128,6 @@ export ARCHFLAGS="-arch ARM64"
 
 source $HOME/.dotfiles/zsh/aliases.sh
 source $HOME/.dotfiles/zsh/envs.sh
+source $HOME/.dotfiles/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
-neofetch
+neofetch]
