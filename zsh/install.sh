@@ -19,5 +19,8 @@ ln -is $HOME/.dotfiles/zsh/.zprofile $HOME/.zprofile
 rm -rf $HOME/.config/neofetch/config.conf
 ln -is $HOME/.dotfiles/zsh/neofetch/config.conf $HOME/.config/neofetch/config.conf
 
+# Symlinks the custom robbyrussell theme
+ln -is $HOME/.dotfiles/zsh/prompt-theme/robbyrussell.zsh-theme $HOME/.dotfiles/zsh/oh-my-zsh/custom/themes/robbyrussell.zsh-theme
+
 # remove info like "Last login: Sun Jan  7 19:53:12 on ttys001" in terminal
 touch ~/.hushlogin
