@@ -12,11 +12,13 @@
 # Taps
 tap 'homebrew/cask-fonts'
 tap 'mongodb/brew'
+tap 'localsend/localsend'
 
 # Dev
 brew 'python3'
 brew 'node'
 brew 'mongodb-community'
+brew 'rust'
 
 # Tools
 brew 'mackup'
@@ -51,6 +53,7 @@ cask 'rekordbox'
 cask 'ultimaker-cura'
 cask 'obs'
 cask 'blender'
+cask 'localsend'
 
 # Tool Casks
 cask 'appcleaner'
@@ -63,6 +66,8 @@ cask 'tailscale'
 cask 'itsycal'
 cask 'aldente'
 cask 'balenaetcher'
+cask 'raycast'
+cask 'rustdesk'
 
 # Quicklook Casks
 cask 'quicklook-json'
@@ -79,6 +84,7 @@ cask 'mongodb-compass'
 cask 'termius'
 cask 'openscad'
 cask 'unity'
+cask 'scrcpy'
 
 # Social Casks
 cask 'signal'
@@ -100,3 +106,4 @@ mas 'Unsplash Wallpapers', id: 1284863847
 mas 'Amphetamine', id: 937984704
 mas 'Notability', id: 360593530
 mas 'ColorSlurp', id: 1287239339
+mas 'Plash'

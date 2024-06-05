@@ -11,3 +11,6 @@
 #                                                                                            
 
 alias ll="ls -las"
+# source: https://apple.stackexchange.com/a/227024
+# source: https://mikefrobbins.com/2023/06/30/opening-specific-panes-in-system-settings-from-the-command-line-on-macos/
+alias screenarrangement="open \"x-apple.systempreferences:com.apple.Displays-Settings.extension?arrangementSection\""

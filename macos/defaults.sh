@@ -15,6 +15,8 @@ defaults write "Apple Global Domain" WebAutomaticSpellingCorrectionEnabled -bool
 defaults write "Apple Global Domain" NSAutomaticCapitalizationEnabled -bool false
 defaults write "Apple Global Domain" NSAutomaticInlinePredictionEnabled -bool false
 defaults write "Apple Global Domain" NSAutomaticPeriodSubstitutionEnabled -bool false
+# disable language switch input bubble
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
 
 # set notification sound
 defaults write "Apple Global Domain" com.apple.sound.beep.sound -string "/System/Library/Sounds/Purr.aiff"
@@ -57,7 +59,7 @@ defaults write "com.apple.dock" "autohide-time-modifier" -float "0.5"
 # set minimize effect
 defaults write "com.apple.dock" "mineffect" -string "suck"
 
-# clear apps in docks
+# remove ALL apps from dock
 defaults write "com.apple.dock" "persistent-apps" -array "{}"
 
 # Mission Control > Automatically rearrange Spaces based on most recent use
