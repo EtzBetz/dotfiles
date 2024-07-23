@@ -21,9 +21,9 @@ brew 'mongodb-community'
 brew 'rust'
 
 # Tools
-brew 'mas'
 brew 'yt-dlp'
 brew 'ffmpeg'
+brew 'displayplacer'
 
 # Customization
 brew 'neofetch'
@@ -104,5 +104,4 @@ mas 'AusweisApp', id: 948660805
 mas 'Unsplash Wallpapers', id: 1284863847
 mas 'Amphetamine', id: 937984704
 mas 'Notability', id: 360593530
-mas 'ColorSlurp', id: 1287239339
 mas 'Plash'
