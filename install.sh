@@ -17,5 +17,4 @@ sudo -v
 ./git/install.sh
 ./macos/install.sh
 ./iterm/install.sh
-./mackup/install.sh
 ./python/install.sh

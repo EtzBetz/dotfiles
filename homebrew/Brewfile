@@ -21,7 +21,6 @@ brew 'mongodb-community'
 brew 'rust'
 
 # Tools
-brew 'mackup'
 brew 'mas'
 brew 'yt-dlp'
 brew 'ffmpeg'
