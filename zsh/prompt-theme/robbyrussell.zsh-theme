@@ -1,13 +1,15 @@
 
 # print green or red dot depending on return value of last command
 RETURNPROMPT="%{$bg[black]%} // %(?:%{$fg_bold[green]%}%1{●%}:%{$fg_bold[red]%}%1{●%})%{$reset_color%}%{$bg[black]%} // %{$reset_color%}"
-# print pwd, cut to last 3 dirs if longer than that
-DIRPROMPT="%{$bg[black]%} // %(4~|.../%3~|%~) // %{$reset_color%}"
+
 # nothing to say here, just print the symbols
 INPUTPROMPT=" %{$reset_color%} -> "
+
+# if pwd is longer than 4 directories, show tail, otherwise print (basically) %~
 PROMPT='
-  ${DIRPROMPT}
+  %{$bg[black]%} // %(4~|$(get_dir_tail)|$(get_path_parent)$(get_base_dir)) // %{$reset_color%}
   ${RETURNPROMPT}${INPUTPROMPT}'
+
 # print current en0 ip address and git status as right prompt, if available
 RPROMPT='%{$(echotc UP 1)%} %{$bg[black]%} // $(get_ip_address) $(git_super_status)// %{$reset_color%} %{$(echotc DO 1)%}'
 
@@ -32,4 +34,35 @@ get_ip_address() {
   else
     echo "%K{#ce5666} No IP %k%{$bg[black]%}"
   fi
+}
+
+get_dir_tail() {
+  echo ".../$(basename $(dirname "$(dirname "$PWD")"))/$(basename $(dirname "$PWD"))/%{$fg_bold[white]%}%1~%{$reset_color%}%{$bg[black]%}"
+}
+
+get_path_parent() {
+  # substitude '/Users/raphael' with '~' from the full PWD
+  FRONTPATH=${PWD:s/\/Users\/raphael/\~}
+  if [ "$FRONTPATH" = "~" ] || [ "$FRONTPATH" = "/" ]; then
+    # user is in userhome, FRONTPATH can be emptied, because get_base_dir is displaying '~'
+    FRONTPATH=""
+  else
+    # remove content after the last '/', including '/'
+    FRONTPATH=${FRONTPATH%/*}
+    # add the '/' back
+    FRONTPATH+="/"
+  fi
+  echo "$FRONTPATH"
+}
+
+get_base_dir() {
+  dir="%{$fg_bold[white]%}"
+  basename="$(basename "$PWD")"
+  if [ "$basename" = "raphael" ]; then
+    dir+="~"
+  else
+    dir+="$basename"
+  fi
+  dir+="%{$reset_color%}%{$bg[black]%}"
+  echo "$dir"
 }
