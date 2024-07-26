@@ -5,7 +5,7 @@
 	<key>AdjustWindowForFontSizeChange</key>
 	<false/>
 	<key>AlternateMouseScroll</key>
-	<false/>
+	<true/>
 	<key>AlternateMouseScrollStringForDown</key>
 	<string></string>
 	<key>AlternateMouseScrollStringForUp</key>
@@ -1185,13 +1185,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.76862746477127075</real>
+				<real>0.86970764398574829</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.3803921639919281</real>
+				<real>0.44630980491638184</real>
 				<key>Red Component</key>
-				<real>0.035294119268655777</real>
+				<real>0.26664197444915771</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -2342,6 +2342,8 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SeparateWindowTitlePerTab</key>
