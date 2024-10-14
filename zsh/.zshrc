@@ -131,3 +131,6 @@ source $HOME/.dotfiles/zsh/envs.sh
 source $HOME/.dotfiles/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # neofetch
+print ""
+print ""
+fortune | cowsay
