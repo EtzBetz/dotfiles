@@ -16,7 +16,8 @@ tap 'localsend/localsend'
 
 # Dev
 brew 'python3'
-brew 'node'
+# brew 'node'  # can be replaced by nvm, because nvm will handle version management
+brew 'nvm'
 brew 'mongodb-community'
 brew 'rust'
 
