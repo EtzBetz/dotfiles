@@ -14,3 +14,9 @@ alias ll="ls -las"
 # source: https://apple.stackexchange.com/a/227024
 # source: https://mikefrobbins.com/2023/06/30/opening-specific-panes-in-system-settings-from-the-command-line-on-macos/
 alias screenarrangement="open \"x-apple.systempreferences:com.apple.Displays-Settings.extension?arrangementSection\""
+
+# source: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#run-mongodb-community-edition
+alias mongostart="mongod --config /opt/homebrew/etc/mongod.conf --fork"
+
+# ESP32 idf commandline
+alias get_idf='. $HOME/Documents/Coding/ESP/esp-idf/export.sh'

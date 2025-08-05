@@ -132,10 +132,21 @@ source $HOME/.dotfiles/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # node nvm (node version manager) requirement
 export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# java jabba (java version manager) requirement
+[ -s "$HOMEBREW_PREFIX/opt/jabba/jabba.sh" ] && . "$HOMEBREW_PREFIX/opt/jabba/jabba.sh"
+
+# miniconda stuff, remove later
+# eval "$(conda "shell.$(basename "${SHELL}")" hook)"
 
 # neofetch
 print ""
 print ""
-fortune | cowsay
+# fortune | cowsay
+cowsay "Willkommen im System, wie kann ich dir heute helfen?
+
+Denk daran, wenn du mal nicht weiter kommst, benutze 'tldr' oder 'cheat'.
+
+Ich wünsche dir einen schönen Tag =)"

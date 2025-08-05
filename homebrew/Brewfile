@@ -13,6 +13,7 @@
 tap 'homebrew/cask-fonts'
 tap 'mongodb/brew'
 tap 'localsend/localsend'
+tap 'mczachurski/wallpapper'
 
 # Dev
 brew 'python3'
@@ -20,11 +21,15 @@ brew 'python3'
 brew 'nvm'
 brew 'mongodb-community'
 brew 'rust'
+brew 'pdm'
+brew 'micro'
 
 # Tools
 brew 'yt-dlp'
 brew 'ffmpeg'
 brew 'displayplacer'
+brew 'wallpapper'
+brew 'ollama'
 
 # Customization
 brew 'neofetch'
@@ -58,22 +63,30 @@ cask 'blender'
 cask 'localsend'
 
 # Tool Casks
+cask 'raycast'
+cask 'alt-tab'
+cask 'nightfall'
+cask 'linearmouse'
+# get v2 from github since v3 is paid after a month
+# cask 'mac-mouse-fix'
+cask 'itsycal'
+cask 'moom'
+cask 'aldente'
 cask 'appcleaner'
 cask 'the-unarchiver'
 cask 'bitwarden'
 cask 'openinterminal'
-cask 'nightfall'
-cask 'moom'
 cask 'tailscale'
-cask 'itsycal'
-cask 'aldente'
 cask 'balenaetcher'
-cask 'raycast'
 cask 'rustdesk'
+cask 'disk-drill'
+cask 'soduto'
 
-# Quicklook Casks
+# Quicklook Casks (https://github.com/sindresorhus/quick-look-plugins)
 cask 'quicklook-json'
 cask 'qlmarkdown'
+cask 'qlstephen'
+cask 'betterzip'
 
 # Dev Casks
 cask 'iterm2'
@@ -93,7 +106,6 @@ cask 'signal'
 cask 'whatsapp'
 cask 'discord'
 cask 'telegram'
-cask 'mattermost'
 
 # Gaming Casks
 cask 'parsec'
@@ -103,8 +115,8 @@ cask 'battle-net'
 cask 'epic-games'
 
 # Mac App Store Apps
-mas 'AusweisApp', id: 948660805
-mas 'Unsplash Wallpapers', id: 1284863847
-mas 'Amphetamine', id: 937984704
-mas 'Notability', id: 360593530
-mas 'Plash'
+# mas 'AusweisApp', id: 948660805
+# mas 'Unsplash Wallpapers', id: 1284863847
+# mas 'Amphetamine', id: 937984704
+# mas 'Notability', id: 360593530
+# mas 'Plash'
