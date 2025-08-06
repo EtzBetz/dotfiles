@@ -16,8 +16,8 @@ rm -rf $HOME/.zprofile
 ln -is $HOME/.dotfiles/zsh/.zprofile $HOME/.zprofile
 
 # Removes neofetch config.conf and symlinks the neofetch config.conf file from the .dotfiles
-rm -rf $HOME/.config/neofetch/config.conf
-ln -is $HOME/.dotfiles/zsh/neofetch/config.conf $HOME/.config/neofetch/config.conf
+# rm -rf $HOME/.config/neofetch/config.conf
+# ln -is $HOME/.dotfiles/zsh/neofetch/config.conf $HOME/.config/neofetch/config.conf
 
 # Symlinks the custom robbyrussell theme
 ln -is $HOME/.dotfiles/zsh/prompt-theme/robbyrussell.zsh-theme $HOME/.dotfiles/zsh/oh-my-zsh/custom/themes/robbyrussell.zsh-theme
