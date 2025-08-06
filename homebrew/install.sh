@@ -13,4 +13,4 @@ brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 # brew tap homebrew/brew
-brew bundle --file ./Brewfile
+brew bundle --file ./homebrew/Brewfile
