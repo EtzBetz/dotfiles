@@ -9,4 +9,4 @@
 #  88               88            88       88        88    `"Y8888Y"'    88      `888  
 #                                                                                      
 
-pip install pipenv --user
+python3 -m pip install pipenv --user
