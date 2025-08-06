@@ -150,7 +150,7 @@ cask 'modrinth'
 cask 'steam'
 cask 'battle-net'
 cask 'epic-games'
-cask 'logitech-g-hub'
+# cask 'logitech-g-hub'
 cask 'whisky'
 
 # Mac App Store Apps
