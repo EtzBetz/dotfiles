@@ -9,6 +9,10 @@
 #  88      88      88  `"8bbdP"Y8   `"Ybbd8"'    `"Y8888Y"'     "Y88888P"   
 #                                                                           
 
+chmod +x ./macos/defaults.sh
+chmod +x ./macos/hostname.sh
+chmod +x ./macos/keyboard.sh
+
 ./macos/defaults.sh
 ./macos/hostname.sh
 ./macos/keyboard.sh
