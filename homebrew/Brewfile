@@ -23,18 +23,36 @@ brew 'mongodb-community'
 brew 'rust'
 brew 'pdm'
 brew 'micro'
+brew 'ccache'
+brew 'cocoapods'
+brew 'gradle'
+brew 'mongocli'
+brew 'ninja'
+brew 'openjdk@17'
 
 # Tools
-brew 'yt-dlp'
-brew 'ffmpeg'
-brew 'displayplacer'
-brew 'wallpapper'
-brew 'ollama'
+brew 'yt-dlp'  # youtube download
+brew 'ffmpeg'  # swiss knife for media
+brew 'displayplacer'  # screen arrangement
+brew 'wallpapper'  # mac os dynamic wallpaper creation
+brew 'ollama'  # llm management
+brew 'cheat'  # cli command help
+brew 'tldr'  # cli command help
+brew 'htop'  # system usage
+brew 'iftop'  # network usage
+brew 'mkvtoolnix'  # media conversion
+brew 'ncdu'  # cli disk usage tool like tree size/disk-drill
+brew 'nmap'  # portscan etc
+brew 'speedtest-cli'  # speedtest
+brew 'subfinder'  # subdomain scan
+brew 'telnet'  # telnet
+brew 'thefuck'  # fix commands
+brew 'tree'  # directory tree view
+brew 'wget'  # web download tool
 
 # Customization
-brew 'neofetch'
-brew 'fortune'
-brew 'cowsay'
+brew 'fortune'  # random quotes
+brew 'cowsay'  # cowsay
 
 # Font Casks
 cask 'font-jetbrains-mono'
@@ -44,9 +62,12 @@ cask 'font-inter'
 cask 'font-lato'
 cask 'font-raleway'
 cask 'font-rubik'
+cask 'font-manrope'
+cask 'font-open-sans'
 
 # App Casks
-cask 'arc'
+cask 'zen-browser'
+cask 'firefox'
 cask 'google-chrome'
 cask 'tor-browser'
 cask 'thunderbird'
@@ -61,6 +82,8 @@ cask 'ultimaker-cura'
 cask 'obs'
 cask 'blender'
 cask 'localsend'
+cask 'visual-studio-code'
+cask 'obsidian'
 
 # Tool Casks
 cask 'raycast'
@@ -81,6 +104,14 @@ cask 'balenaetcher'
 cask 'rustdesk'
 cask 'disk-drill'
 cask 'soduto'
+cask 'torguard'
+cask 'audacity'
+cask 'raspberry-pi-imager'
+cask 'mochi-diffusion'
+cask 'handbrake-app'
+cask 'hazeover'
+cask 'imaging-edge-webcam'
+cask 'stats'
 
 # Quicklook Casks (https://github.com/sindresorhus/quick-look-plugins)
 cask 'quicklook-json'
@@ -91,28 +122,36 @@ cask 'betterzip'
 # Dev Casks
 cask 'iterm2'
 cask 'jetbrains-toolbox'
-cask 'visual-studio-code'
 cask 'docker'
+cask 'docker-desktop'
 cask 'postman'
 cask 'cyberduck'
 cask 'mongodb-compass'
 cask 'termius'
 cask 'openscad'
 cask 'unity'
+cask 'unity-hub'
 cask 'scrcpy'
+cask 'android-platform-tools'
+cask 'github'
+cask 'bambu-studio'
 
 # Social Casks
 cask 'signal'
 cask 'whatsapp'
 cask 'discord'
 cask 'telegram'
+cask 'microsoft-teams'
 
 # Gaming Casks
 cask 'parsec'
 cask 'minecraft'
+cask 'modrinth'
 cask 'steam'
 cask 'battle-net'
 cask 'epic-games'
+cask 'logitech-g-hub'
+cask 'whisky'
 
 # Mac App Store Apps
 # mas 'AusweisApp', id: 948660805

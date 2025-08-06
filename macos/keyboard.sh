@@ -12,7 +12,7 @@
 #                                                                                                    
 
 # download keyboard layout for en intl, but with german umlaute, unzip and put into the correct folder for usage
-git clone git@github.com:ChristophHess/German-International-Keyboard-Layout.git ~/Downloads/de-intl-layout
-unzip ~/Downloads/de-intl-layout/GermanIntl.bundle.zip
-mv ~/Downloads/de-intl-layout/GermanIntl.bundle ~/Library/Keyboard\ Layouts/GermanIntl.bundle
-# todo: activate in script?
+curl -L -o ~/Downloads/EurKEY-macOS.tar.gz https://github.com/felixfoertsch/EurKEY-macOS/archive/refs/heads/master.tar.gz
+tar -xzvf ~/Downloads/EurKEY-macOS.tar.gz -C ~/Downloads/
+sudo cp ~/Downloads/EurKEY-macOS-master/*.bundle /Library/Keyboard\ Layouts/EurKey-macOS.bundle
+# TODO: activate in script?

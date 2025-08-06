@@ -13,5 +13,5 @@
 ./hostname.sh
 ./keyboard.sh
 
-file="$HOME/.dotfiles/macos/backgrounds/arun-clarke-UDEb05r0Uy8-unsplash.jpg"
+file="$HOME/.dotfiles/macos/backgrounds/RanchoNight_6K_Dyn.heic"
 osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"${file}\" as POSIX file"
