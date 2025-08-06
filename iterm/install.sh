@@ -10,5 +10,5 @@
 #                                                                 
 
 # ToDo: set profile/set profile read dir to .dotfiles
-mkdir -p $HOME/Library/Application Support/iTerm2/Scripts
+mkdir -p $HOME/Library/Application\ Support/iTerm2/Scripts
 cp -R ./iterm/Scripts $HOME/Library/Application\ Support/iTerm2/Scripts
