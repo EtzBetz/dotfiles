@@ -9,9 +9,9 @@
 #  88      88      88  `"8bbdP"Y8   `"Ybbd8"'    `"Y8888Y"'     "Y88888P"   
 #                                                                           
 
-./defaults.sh
-./hostname.sh
-./keyboard.sh
+./macos/defaults.sh
+./macos/hostname.sh
+./macos/keyboard.sh
 
 file="$HOME/.dotfiles/macos/backgrounds/RanchoNight_6K_Dyn.heic"
 osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"${file}\" as POSIX file"
